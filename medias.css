@@ -1,0 +1,140 @@
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    position: relative;
+    top: 140vh;
+    border: 2px solid goldenrod;
+    margin: 60px;
+}
+.about h3 {
+    position: absolute;
+    text-align: center;
+    top: -100px;
+    border-radius: -10px;
+    padding: 10px;
+    font-size: 4em;
+}
+.navi,
+.navi2 {
+    margin: 20px 20px;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #212532;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    transition-delay: 0.8s;
+}
+.navi.active,
+.navi2.active {
+    width: 200px;
+    height: 200px;
+    transition-delay: 0s;
+}
+.navi span,
+.navi2 span {
+    position: absolute;
+    margin: 10px;
+    width: 10px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 50%;
+    transform: translate(calc(12px * var(--x)), calc(12px * var(--y)));
+    transition: transform 0.5s,width 0.5s, height 0.5s,background 0.5s;
+    transition-delay: calc(0.1s * var(--i));
+}
+.navi.active span,
+.navi2.active span {
+    width: 45px;
+    height: 45px;
+    background: #333849;
+    transform: translate(calc(60px * var(--x)), calc(60px * var(--y)));
+}
+.navi span ion-icon,
+.navi2 span ion-icon {
+    transition: 0.5s;
+    font-size: 0em;
+}
+.navi.active span ion-icon,
+.navi2.active span ion-icon {
+    font-size: 1.35em;
+}
+.navi.active span:hover ion-icon,
+.navi2.active span:hover ion-icon {
+    color: #f00;
+    filter: drop-shadow(0 0 2px #f00) drop-shadow(0 0 5px #f00) drop-shadow(0 0 15px #f00);
+}
+
+@media (max-width:1180px) {
+    .about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 50vh;
+        position: relative;
+        top: 80vh;
+        border: 2px solid goldenrod;
+        margin: 60px;
+    }
+    .navi,
+.navi2 {
+    margin: 20px 20px;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #212532;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    transition-delay: 0.8s;
+}
+.navi.active,
+.navi2.active {
+    width: 150px;
+    height: 150px;
+    transition-delay: 0s;
+}
+.navi span,
+.navi2 span {
+    position: absolute;
+    margin: 10px;
+    width: 7px;
+    height: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 50%;
+    transform: translate(calc(12px * var(--x)), calc(12px * var(--y)));
+    transition: transform 0.5s,width 0.5s, height 0.5s,background 0.5s;
+    transition-delay: calc(0.1s * var(--i));
+}
+.navi.active span,
+.navi2.active span {
+    width: 30px;
+    height: 30px;
+    background: #333849;
+    transform: translate(calc(40px * var(--x)), calc(40px * var(--y)));
+}
+.navi span ion-icon,
+.navi2 span ion-icon {
+    transition: 0.5s;
+    font-size: 0em;
+}
+.navi.active span ion-icon,
+.navi2.active span ion-icon {
+    font-size: 1.35em;
+}
+}

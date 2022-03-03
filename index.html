@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="open">
+        <div class="layer"></div>
+        <div class="layer"></div>
+    </div>
+    <div id="home">
+        <div class="header">
+            <h2 class="logo"><img src="naruto.png" class="nar"></h2>
+            <ion-icon style="font-size: 2rem;" name="menu-outline" onclick="menuToggle()"></ion-icon>
+            <ul class="show" id="navigation">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#">Contact</a></li>
+                <ion-icon style="font-size: 2rem;" name="close-outline" onclick="menuToggle()"></ion-icon>
+            </ul>
+        </div>
+        <div id="toggle" onclick="toggle()" ></div>
+        <div class="bannerText" id="banner">
+            <h2>Hello There</h2>
+            <h3>My name is Kelvin</h3>
+            <p>I am a web designer and developer with the sole aim of creating websites so breathtaking you just can't take your eyes off of it. Literally.
+                <br>
+               
+                I am quietly confident, naturally curious, and perpetually working on improving my skills one design problem at a time
+                </p>
+            <a href="#">Read More</a>
+        </div>
+        <!-- <ul class="sci" id="banner">
+            <li><a href="#"><ion-icon class="fa" name="logo-npm"></i></a></li>
+            <li><a href=""><ion-icon class="fa" name="logo-figma"></a></li>
+            <li><a href="#"><ion-icon class="fab" name="logo-nodejs"></ion-icon></a></li>
+            <li><a href="#"><ion-icon class="fa" name="logo-javascript"></ion-icon></a></li>
+        </ul> -->
+        <div class="element1"></div>
+        <div class="element2"></div>
+        <div class="element3"></div>
+    </div>
+    <div id="About" class="container">
+        <div class="just-text">
+            <h1>
+                <span>Do<hide>n't</hide></span>
+                <span><hide>Qu</hide>it</span>
+            </h1>
+            <br>
+            <h2>A little about me</h2>
+            <p> I'm a multi-talented human with a wide range of design disciplines. You can also call me a Frontend designer, Editor, Rapper, Ghostwriter or by any other market defined function-title. I'm also a multi-disciplinary maker in wide range of disciplines, manager, advisor, entrepreneur, music enthusiast, traveler, photographer, investor and more.  <br> <br>  I don’t like to define myself by the work I’ve done. I define myself by the work I want to do. Skills can be taught, personality is inherent. I prefer to keep learning, continue challenging myself, and do interesting things that matter.   
+                <br>
+                Fueled by high energy levels and boundless enthusiasm, I’m easily inspired and more then willing to follow my fascinations wherever they take me. I’m passionate, expressive, multi-talented spirit with a natural ability to entertain and inspire. I’m never satisfied to just come up with ideas. Instead I have an almost impulsive need to act on them. My abundant energy fuels me in the pursuit of many interests, hobbies, areas of study and artistic endeavors. I’m a fast learner, able to pick up new skills and juggle different projects and roles with relative ease.
+            </p>
+        </div>
+    </div>
+    
+    <div class="about" id="tools">
+        <h3>Skills</h3>
+        <div class="navi">
+            <span style="--i:0;--x:-1;--y:0"><ion-icon class="fa" name="logo-github"></ion-icon></span>
+            <span style="--i:1;--x:1;--y:0"><ion-icon class="fa" name="logo-html5"></ion-icon></span>
+            <span style="--i:2;--x:0;--y:-1"><ion-icon class="fa" name="logo-css3"></ion-icon></span>
+            <span style="--i:3;--x:0;--y:1"><ion-icon class="fa" name="logo-javascript"></ion-icon></span>
+            <span style="--i:4;--x:1;--y:1"><ion-icon name="logo-angular"></ion-icon></span>
+            <span style="--i:5;--x:-1;--y:-1"><ion-icon class="fab" name="logo-wordpress"></ion-icon></span>
+            <span style="--i:6;--x:0;--y:0"><ion-icon class="fab" name="logo-nodejs"></ion-icon></span>
+            <span style="--i:7;--x:-1;--y:1"><ion-icon class="fab" name="logo-laravel"></ion-icon></span>
+            <span style="--i:8;--x:1;--y:-1"><ion-icon class="fa" name="logo-figma"></ion-icon></span>
+        </div>
+        
+        <div class="navi2">
+            <span style="--i:0;--x:-1;--y:0"><ion-icon class="fa" name="logo-github"></ion-icon></span>
+            <span style="--i:1;--x:1;--y:0"><ion-icon class="fa" name="logo-html5"></ion-icon></span>
+            <span style="--i:2;--x:0;--y:-1"><ion-icon class="fa" name="logo-css3"></ion-icon></span>
+            <span style="--i:3;--x:0;--y:1"><ion-icon class="fa" name="logo-javascript"></ion-icon></span>
+            <span style="--i:4;--x:1;--y:1"><ion-icon class="fa" name="logo-react"></ion-icon></span>
+            <span style="--i:5;--x:-1;--y:-1"><ion-icon class="fab" name="logo-wordpress"></ion-icon></span>
+            <span style="--i:6;--x:0;--y:0"><ion-icon class="fab" name="logo-nodejs"></ion-icon></span>
+            <span style="--i:7;--x:-1;--y:1"><ion-icon class="fab" name="logo-laravel"></ion-icon></span>
+            <span style="--i:8;--x:1;--y:-1"><ion-icon class="fa" name="logo-figma"></ion-icon></span>
+        </div>
+          
+    </div>
+    <div class="bigBox" id="work">
+        <h3>MY WORK</h3>
+        <div class="card">
+            <div class="imgBx">
+                <img src="mask.png" alt="">
+            </div>
+            <div class="content">
+                <h2>Mayo Clinic</h2>
+                <p>I cloned Mayo Clinic Landing page using <span style="font-weight: bold;">HTML and CSS</span></p>
+                <br>
+                <br>
+                <a href="https://github.com/K3lson/Mayo-Clinic">CODE</a>
+                <a href="https://k3lson.github.io/Mayo-Clinic/">LIVE DEMO</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="mask.png" alt="">
+            </div>
+            <div class="content">
+                <h2>First Portfolio</h2>
+                <p>TMy first portfolio. </p>
+                <br>
+                <br>
+                <a href="http://">CODE</a>
+                <a href="http://">LIVE DEMO</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="mask.png" alt="">
+            </div>
+            <div class="content">
+                <h2>Card three</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor esse necessitatibus nulla cum facilis minima delectus nostrum voluptatem id voluptate, dolores eligendi quidem accusamus ducimus sed minus fuga exercitationem officiis?</p>
+                <br>
+                <br>
+                <a href="http://">CODE</a>
+                <a href="http://">LIVE DEMO</a>
+            </div>
+        </div>
+            <div class="element1"></div>
+            <div class="element2"></div>
+    </div>
+
+    <div class="footer">
+        <ul>
+           <li>
+            <a href="http://">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <ion-icon name="logo-github"></ion-icon>
+        </a>
+        </li>
+        <li>
+            <a href="mailto:n3lsonfree@gmail.com">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <ion-icon name="mail-outline"></ion-icon>
+        </a>
+        </li>
+        <li>
+            <a href="http://">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+        </li>
+        <li>
+            <a href="http://">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        </li>
+        </ul>
+       
+        <div class="element2"></div>
+        <div class="element3"></div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        
+        function menuToggle() {
+            var element = document.getElementById("navigation");
+            element.classList.toggle("active");
+
+            var banner = document.getElementById("banner");
+            banner.style.zIndex = "20";
+        }
+        let navi =document.querySelector('.navi');
+        navi.onclick = function() {
+            navi.classList.toggle('active');
+        }
+        let navi2 =document.querySelector('.navi2');
+        navi2.onclick = function() {
+            navi2.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
